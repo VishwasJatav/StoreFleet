@@ -1,0 +1,35 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "backend/ │── node_modules/ │── src/ │   │── config/ │   │   ├── db.js              # Database connection │   │── controllers/ │   │   ├── authController.js  # User authentication logic │   │   ├── productController.js # Product CRUD logic │   │   ├── orderController.js # Order handling logic │   │── models/ │   │   ├── User.js            # User model │   │   ├── Product.js         # Product model │   │   ├── Order.js           # Order model │   │── routes/ │   │   ├── authRoutes.js      # Authentication routes │   │   ├── productRoutes.js   # Product routes │   │   ├── orderRoutes.js     # Order routes │   │── middleware/ │   │   ├── authMiddleware.js  # JWT authentication middleware │   │── utils/ │   │   ├── generateToken.js   # Function to generate JWT tokens │   │── server.js              # Main entry point │── .env                        # Environment variables (DB_URI, JWT_SECRET) │── package.json                 # Dependencies and scripts │── README.md                    # Documentation",
+  "dependencies": {
+    "@react-oauth/google": "^0.12.1",
+    "axios": "^1.8.1",
+    "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "google-auth-library": "^9.15.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.12.1",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.10.0",
+    "passport": "^0.7.0",
+    "passport-facebook": "^3.0.0",
+    "passport-google-oauth20": "^2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
